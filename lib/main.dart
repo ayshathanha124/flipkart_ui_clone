@@ -25,19 +25,17 @@ class Splashscreen extends StatefulWidget {
 
 class _SplashscreenState extends State<Splashscreen> {
   @override
-  void initState() {
+  void initState(){
     super.initState();
     Future.delayed(Duration(seconds: 3),(){
-      Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => Loginpage())
-      );
+      Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=> Loginpage()));
     }
-    
     );
   }
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color.fromARGB(255, 200, 187, 6),
+      backgroundColor: Colors.yellow,
       body: Center(
         child: Image.asset('assets/images/flipkart.png',
         width: 180,
